@@ -1,13 +1,15 @@
 /* BEGIN HERO SECTION */
 
 *{
-   font-family:Arial, Helvetica, sans-serif
+   font-family:Arial, Helvetica, sans-serif;
+   box-sizing: border-box;
 }
 
 .hero {
     margin: 10 auto;
     max-width: 100%;
     text-align: center;
+    display: block;
 }
 
 /* END HERO SECTION */
@@ -24,8 +26,10 @@
     margin: auto;
 }
 
+/* ??? How to make top padding smaller? */
 .box-header{
-    font-size: x-large
+    font-size: x-large;
+    padding-top: 0px;
 }
 
 #email-label, #password-label{
@@ -38,12 +42,12 @@
 
 
 #email, #password, #button-sign-in{
-    width: 400px
+    width: 100%
 }
 
 .form-label {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 /* ??? How to push 'Forgot Password' alignment closer to right side? + How  to do text-decoration: none; to remove hyperlink underline/font-color? */
@@ -58,6 +62,11 @@
     text-decoration: none;
     color: royalblue;
     text-indent: 20px;
+}
+
+:link {
+    color: royalblue;
+    text-decoration: none;
 }
 
 #button-sign-in {
