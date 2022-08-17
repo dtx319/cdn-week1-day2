@@ -1,0 +1,136 @@
+/* BEGIN HERO SECTION */
+
+*{
+   font-family:Arial, Helvetica, sans-serif
+}
+
+.hero {
+    margin: 10 auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* END HERO SECTION */
+
+
+/* BEGIN BOX SECTION */
+
+.box {
+    text-align: left;
+    border: 1px solid gray;
+    padding: 0px 20px;
+    max-width: 400px;
+    position:relative;
+    margin: auto;
+}
+
+.box-header{
+    font-size: x-large
+}
+
+#email-label, #password-label{
+    font-size: smaller;
+}
+
+#email, #password{
+    font-size: large;
+}
+
+
+#email, #password, #button-sign-in{
+    width: 400px
+}
+
+.form-label {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ??? How to push 'Forgot Password' alignment closer to right side? + How  to do text-decoration: none; to remove hyperlink underline/font-color? */
+#password-text {
+    font-size: large;
+    text-decoration: none;
+    color: royalblue;
+}
+
+.box-help {
+    font-size: large;
+    text-decoration: none;
+    color: royalblue;
+    text-indent: 20px;
+}
+
+#button-sign-in {
+    background-color: rgb(255, 200, 0);
+}
+
+#button-sign-in:hover{
+    background-color: royalblue;
+}
+
+/* END BOX SECTION */
+
+
+
+/* START NEW-USER SECTION */
+
+/*How to add lines before and after text? Lines may look terrible, depending on screensize. */
+.new-prompt {
+    color: gray;
+    font-size: large;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    justify-content: center;
+}
+
+.new-prompt::before{
+    content:" ";
+    height: 2px;
+    width: 130px;
+    background: gray;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 550px;
+  }
+  
+  .new-prompt:after{
+    content:" ";
+    height: 2px;
+    width: 130px;
+    background: gray;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 550px;
+  }
+
+/* ??? How to center text in button? */
+#new-button {
+    font-size: smaller;
+    width: 400px;
+    display: flex;
+    text-align: center;
+    margin:auto;
+}
+
+/* END NEW-USER SECTION */
+
+
+
+/* START FOOTER SECTION */
+.footer {
+    text-align: center;
+    font-size: smaller;
+}
+
+.footer-links {
+    max-width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center; 
+    margin: auto;
+    text-decoration: none;
+    color: royalblue;
+}
